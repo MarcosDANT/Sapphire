@@ -71,6 +71,31 @@ button:hover {
     background-color: #555;
 }
 
+button.prev,
+button.next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #ddd;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #bbb;
+    transform: scale(1.1);
+}
+
+button.prev:active,
+button.next:active {
+    background-color: #aaa;
+    transform: scale(1);
+}
+
 .calendar {
     margin-top: 20px;
 }
