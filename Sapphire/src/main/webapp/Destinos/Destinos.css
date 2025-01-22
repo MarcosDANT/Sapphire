@@ -1,0 +1,190 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-section {
+    flex: 0 0 40%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.calendar-section {
+    flex: 0 0 50%;
+    text-align: right;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button.prev,
+button.next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #ddd;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #bbb;
+    transform: scale(1.1);
+}
+
+button.prev:active,
+button.next:active {
+    background-color: #aaa;
+    transform: scale(1);
+}
+
+.days table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 5px;
+}
+
+.day-button {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.day-button.selected {
+    background-color: #007BFF;
+    color: #fff; 
+    border-color: #0056b3;
+}
+
+.day-button:disabled {
+    background-color: #f8f8f8;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.discover-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Puedes ajustar el margen según lo necesites */
+}
+
+.discover {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: auto; /* Hace que el botón tenga un tamaño ajustado */
+}
+
+.discover:hover {
+    background-color: #555;
+}
